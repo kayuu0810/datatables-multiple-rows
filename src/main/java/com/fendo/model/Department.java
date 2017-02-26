@@ -1,7 +1,7 @@
 package com.fendo.model;
 
 
-public class Ceshi {
+public class Department {
 	
 	private int id;
 

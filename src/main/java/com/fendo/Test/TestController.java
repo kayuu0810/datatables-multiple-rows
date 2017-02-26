@@ -1,6 +1,6 @@
 package com.fendo.Test;
 
-import com.fendo.model.Ceshi;
+import com.fendo.model.Department;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -19,12 +19,12 @@ public class TestController {
 	public Map<String, Object>  listjsonceshi(){
 		 Map<String, Object> map = new HashMap<String, Object>();
 		int count=20;
-		List<Ceshi> list=new ArrayList<Ceshi>();
+		List<Department> list=new ArrayList<Department>();
 		for (int i = 1; i < 200; i++) {
-			Ceshi ceshi=new Ceshi();
-			ceshi.setId(i);
-			ceshi.setUsername("研发"+i+"部");
-			list.add(ceshi);
+			Department Department =new Department();
+			Department.setId(i);
+			Department.setUsername("研发"+i+"部");
+			list.add(Department);
 		}
 		map.put("recordsTotal", count);
 	    map.put("recordsFiltered", count);
